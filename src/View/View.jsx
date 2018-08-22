@@ -18,7 +18,7 @@ class View extends React.PureComponent {
 
   componentDidMount() {
     const xhr = new XMLHttpRequest()
-    xhr.open('get', 'http://104.197.3.188:8080/images', true)
+    xhr.open('get', 'http://35.225.96.119:8080/images', true)
     xhr.onload = () => this.setState({ images: JSON.parse(xhr.response).results })
     xhr.send()
   }
