@@ -37,7 +37,7 @@ class Contribute extends React.PureComponent {
 
       const xhr = new XMLHttpRequest();
       // xhr.open('post', 'http://localhost:8080/addimage', true);
-      xhr.open('post', 'http://localhost:8080/addimage', true);
+      xhr.open('post', 'http://104.197.3.188:8080/addimage', true);
       // xhr.setRequestHeader('Content-Type', 'multipart/form-data');
       xhr.onload = (res) => this.setState({ files: [ ...this.state.files, { preview: file.preview, ...JSON.parse(xhr.response) }] })
       xhr.send(form)
